@@ -1,0 +1,45 @@
+<!-- Name: Andrea Cavalcanti Nascimento | Student Number: 301250129
+Date: Oct 7th, 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/contact.css" />
+
+    <title>Contact</title>
+</head>
+<body>    
+    <!-- main container -->
+    <main class="main-container">
+    <section class="section-container">
+        <h1 class="title"><%= title %></h1>  
+        <p class="para">Use the form below, or email me to 
+            <a href="mailto:andreacnas@gmail.com? subject=subject text" class="link-email"> andreacnas@gmail.com</a></p>
+
+        <!-- contact me form -->    
+        <form>
+            <label class="label-form" for="name">First Name:</label><br>
+            <input class="input-form"  id="firstName" type="text" autofocus="true" placeholder="Enter your first name" required><br>
+            <label class="label-form" for="name">Last Name:</label><br>
+            <input class="input-form" id="lastName" type="text" autofocus="true" placeholder="Enter your last name"><br>
+            <label class="label-form" for="email">Email Address:</label><br>
+            <input class="input-form" id="emailAddress" type="email" placeholder="Enter your email address" required><br>
+            <label class="label-form" for="message">Message:</label><br>
+            <textarea class="text-area-form" id="userMessage" placeholder="Enter your message" required></textarea><br>
+            <input  class="btn-submit" type="submit" value="Send Message" onclick="clickSend()">
+        </form>
+    </section>    
+
+    <!-- avatar carroussel -->
+     <img name="slide" class="avatar-slide" alt="Avatar"> 
+    </main> 
+   
+    <!-- java script -->
+    <script src="./scripts/app.js"></script>  
+</body>
+</html>

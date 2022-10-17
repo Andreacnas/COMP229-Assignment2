@@ -1,0 +1,44 @@
+/* Services CSS file
+Name: Andrea Cavalcanti Nascimento
+Student Number: 301250129
+Date: Oct 7th, 2022 */
+
+body {
+    min-height: 100vh;  
+}
+
+.title{
+    text-align: center;
+    border-bottom: 5px solid #5C2E7E;
+    margin: 0 62px 30px 62px;
+    padding-top: 50px;
+    padding-bottom: 3px;
+    font-size: 200%;
+}
+
+/* Section Containers = Services 1 + Services 2 */
+.container-services1, .container-services2{
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    max-width: 900px;
+    max-height: 290px;
+    margin: auto; 
+}
+
+.list-style{
+    list-style-image: linear-gradient(to left bottom, #8BBCCC, #7b4d9c);
+    font-size: 1.4em;
+    color: #696363;
+}
+
+.img-services{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.img-services:hover{
+    transform: scale(1.1);
+}

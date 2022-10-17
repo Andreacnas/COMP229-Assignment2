@@ -1,0 +1,53 @@
+<!-- Name: Andrea Cavalcanti Nascimento | Student Number: 301250129
+Date: Oct 7th, 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/about.css" />
+</head>
+<body>
+    <h1 class="title"><%= title %></h1>   
+
+    <!-- main container -->
+    <main class="main-container">
+        <!-- profile picture -->
+        <div class="img-container">
+            <img class="img-circle" src="./content/images/Circle.png" alt="Circle">
+            <img class="img-profile" src="./content/images/Andrea.png" alt="Andrea">
+            <p class="para-name">Andrea Cavalcanti</p>            
+        </div>      
+
+       <!-- self-description -->
+       <div class="desc-container">
+            <p>
+                I am a tech professional with an engineering and programming background. 
+                I'm also savvy about Software Development Life Cycle (SDLC), JS and jQuery, 
+                C#.Net, Java, HTML, CSS, SQL, UNIX/LINUX, and basic comprehension in Python.                 
+            </p>
+            <p>I have knowledge of Agile Methodologies (Scrum Master certified).</p>
+        </div>
+    </main>    
+        
+    <!-- resume + contact btn-->
+    <section class="section-container">
+        <h2 class="downl">Please Download my Resume: </h2> 
+    
+        <a href="./content/assets/andrea_cavalcanti_resume.pdf">
+        <input class="btn-resume" type="Submit" value="Download" onclick="clickCResume()">
+        </a>
+        <input class="btn-contact" type="Submit" value="Contact Me" onclick="clickContact()">   
+      
+        
+    </section>
+
+    <!-- java script -->
+    <script src="./scripts/app.js"></script>    
+</body>
+</html>
