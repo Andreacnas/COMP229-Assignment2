@@ -1,7 +1,7 @@
 // JS file
 // Name: Andrea Cavalcanti Nascimento
 // Student Number: 301250129
-// Date: Oct 7th, 2022
+// Date: Oct xxth, 2022
 
 //IIFE
 (function(){
