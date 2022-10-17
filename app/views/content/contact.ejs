@@ -1,25 +1,18 @@
 <!-- Name: Andrea Cavalcanti Nascimento | Student Number: 301250129
 Date: Oct 7th, 2022 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+<link rel="stylesheet" href="./styles/contact.css" />
+<title>Contact</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/contact.css" />
-
-    <title>Contact</title>
-</head>
-<body>    
-    <!-- main container -->
-    <main class="main-container">
-    <section class="section-container">
+<!-- main container -->
+<div class="main-container">
+    <div class="section-container">
         <h1 class="title"><%= title %></h1>  
         <p class="para">Use the form below, or email me to 
-            <a href="mailto:andreacnas@gmail.com? subject=subject text" class="link-email"> andreacnas@gmail.com</a></p>
+            <a href="mailto:andreacnas@gmail.com? subject=subject text" class="link-email"> andreacnas@gmail.com             
+            </a>
+        </p>
 
         <!-- contact me form -->    
         <form>
@@ -33,13 +26,11 @@ Date: Oct 7th, 2022 -->
             <textarea class="text-area-form" id="userMessage" placeholder="Enter your message" required></textarea><br>
             <input  class="btn-submit" type="submit" value="Send Message" onclick="clickSend()">
         </form>
-    </section>    
+    </div>    
 
     <!-- avatar carroussel -->
-     <img name="slide" class="avatar-slide" alt="Avatar"> 
-    </main> 
-   
-    <!-- java script -->
-    <script src="./scripts/app.js"></script>  
-</body>
-</html>
+    <img name="slide" class="avatar-slide" alt="Avatar"> 
+</div> 
+
+<!-- java script -->
+<script src="./scripts/app.js"></script>  
