@@ -1,56 +1,45 @@
 <!-- Name: Andrea Cavalcanti Nascimento | Student Number: 301250129
 Date: Oct 7th, 2022 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+<link rel="stylesheet" href="./styles/home.css" />
+<title>Home</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/home.css" />
-    <title>Home</title>
-</head>
-<body>   
-    
-    <!-- main container -->
-    <main class="main-container">
-        <!-- all content container -->
-        <section class="content-container">
-            <h1 class="title"><%= title %></h1>
+<!-- main container -->
+<div class="main-container">
+    <!-- all content container -->
+    <div class="content-container">
+        <h1 class="title"><%= title %></h1>
             
-            <!-- description container -->
-            <section class="desc-container">
-                <h2 class="description">I'm Andrea Cavalcanti, 
-                    a Software Developer specialized in 
-                    website and software creation.
-                </h2> 
-            </section>  
+        <!-- description container -->
+        <div class="desc-container">
+            <h2 class="description">I'm Andrea Cavalcanti, 
+                a Software Developer specialized in 
+                website and software creation.
+            </h2> 
+        </div>  
         
-            <!-- mission container -->
-            <section class="mission-container">
-                <h3 class="mission">Mission:</h3>
-                <p class="para-mission">Continuous improvement is my mindset.</p>
-                <p class="para-mission">My vision is to strive to be the best version of myself constantly,
-                    with my health, my family&friends and my professional life.</p>
-            </section>
+        <!-- mission container -->
+        <div class="mission-container">
+            <h3 class="mission">Mission:</h3>
+            <p class="para-mission">Continuous improvement is my mindset.</p>
+            <p class="para-mission">My vision is to strive to be the best version of myself constantly,
+                with my health, my family&friends and my professional life.</p>
+        </div>
             
-            <!-- button container -->
-            <section class="btn-container">  
-            <h4 class="learn">Learn More</h4>    
-                <input class="btn-about" type="submit" value="About Me" onclick="clickAbout()">
-            </section>
-        </section>
+        <!-- button container -->
+        <div class="btn-container">  
+        <h4 class="learn">Learn More</h4>    
+            <input class="btn-about" type="submit" value="About Me" onclick="clickAbout()">
+        </div>
+    </div>
         
-        <!-- logo -->
-        <img class="img-logo" src="./content/images/Logo.png" alt="Logo">
-    </main>
+    <!-- logo -->
+    <img class="img-logo" src="./content/images/Logo.png" alt="Logo">
+</div>
 
-    <!-- java script -->
-    <script src="./scripts/app.js"></script>  
-</body>
-</html>
+<!-- java script -->
+<script src="./scripts/app.js"></script>  
 
 
 
