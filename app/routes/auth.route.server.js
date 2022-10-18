@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { DisplayLoginPage, 
-    DisplayRegisterPage, 
+    // DisplayRegisterPage, 
     ProcessLoginPage,
-    ProcessLogoutPage,
-    ProcessRegisterPage} 
+    ProcessLogoutPage} 
+    // ProcessRegisterPage} 
     from "../controllers/auth.controller.server.js";
 
 const router = Router();
@@ -15,9 +15,9 @@ router.post('/login', ProcessLoginPage);
 
 
 // Display Register Router
-router.get('/register', DisplayRegisterPage);
+// router.get('/register', DisplayRegisterPage);
 // Process Registration Page
-router.post('/register', ProcessRegisterPage);
+// router.post('/register', ProcessRegisterPage);
 
 // Process lougout 
 router.get('/logout', ProcessLogoutPage);

@@ -23,13 +23,13 @@ export function DisplayLoginPage(req, res, next){
     return res.redirect('/contacts-list');
 }
 
-export function DisplayRegisterPage(req, res, next){
-    if(!req.user){
-        return res.render('index', {title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)});
-    }
+// export function DisplayRegisterPage(req, res, next){
+//     if(!req.user){
+//         return res.render('index', {title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)});
+//     }
 
-    return res.redirect('/contacts-list');
-}
+//     return res.redirect('/contacts-list');
+// }
 
 // Processing Function
 export function ProcessLoginPage(req, res, next){
@@ -57,32 +57,32 @@ export function ProcessLoginPage(req, res, next){
     })(req, res, next);
 }
 
-export function ProcessRegisterPage(req, res, next){
-    let newUser = new User({
-        username: req.body.username,
-        emailAddress: req.body.emailAddress,
-        displayName: req.body.firstName + " " + req.body.lastName
-    });
+// export function ProcessRegisterPage(req, res, next){
+//     let newUser = new User({
+//         username: req.body.username,
+//         emailAddress: req.body.emailAddress,
+//         displayName: req.body.firstName + " " + req.body.lastName
+//     });
 
-    User.register(newUser, req.body.password, function(err){
-        if(err){
-            if(err.name == "UserExistsError"){
-                console.error('ERROR: User Already Exists!');
-                req.flash('registerMessage', 'Registration Error')
-            } else {
-                console.error(err.name);
-                req.flash('registerMessage', 'Server Error')
-            }
+//     User.register(newUser, req.body.password, function(err){
+//         if(err){
+//             if(err.name == "UserExistsError"){
+//                 console.error('ERROR: User Already Exists!');
+//                 req.flash('registerMessage', 'Registration Error')
+//             } else {
+//                 console.error(err.name);
+//                 req.flash('registerMessage', 'Server Error')
+//             }
             
-            return res.redirect('/register');
-        }
+//             return res.redirect('/register');
+//         }
 
-        return passport.authenticate('local')(req, res, function()
-        {
-            return res.redirect('/');
-        });
-    });
-}
+//         return passport.authenticate('local')(req, res, function()
+//         {
+//             return res.redirect('/');
+//         });
+//     });
+// }
 
 export function ProcessLogoutPage(req, res, next){
     req.logOut(function(err){
