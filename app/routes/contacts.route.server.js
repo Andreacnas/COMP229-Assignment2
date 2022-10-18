@@ -8,8 +8,8 @@ import { Router } from "express";
 import { DisplayContactsList, 
     DisplayContactsAddPage, 
     ProcessContactsAddPage, 
-    DisplayContactsEditPage, 
-    ProcessContactsEditPage, 
+    DisplayContactsUpdatePage, 
+    ProcessContactsUpdatePage, 
     ProcessContactsDelete } from "../controllers/contacts.controller.server.js";
 
 const router = Router();
@@ -17,8 +17,8 @@ const router = Router();
 router.get('/contacts-list', DisplayContactsList);
 router.get('/contacts-add', DisplayContactsAddPage);
 router.post('/contacts-add', ProcessContactsAddPage);
-router.post('/contacts-edit/:id', ProcessContactsEditPage);
-router.get('/contacts-edit/:id', DisplayContactsEditPage);
+router.post('/contacts-update/:id', ProcessContactsUpdatePage);
+router.get('/contacts-update/:id', DisplayContactsUpdatePage);
 router.get('/contacts-delete/:id', ProcessContactsDelete);
 
 export default router;

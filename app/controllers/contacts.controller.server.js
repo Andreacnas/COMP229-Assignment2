@@ -12,12 +12,12 @@ export function DisplayContactsList(req, res, next){
             res.end(err);
         }
 
-        res.render('index', {title: 'Contacts List', page: 'contacts/list', contacts: contactsCollection});
+        res.render('index', {title: 'Business Contact List', page: 'contacts/list', contacts: contactsCollection});
     })
 }
 
 export function DisplayContactsAddPage(req, res, next){
-    res.render('index', { title: 'Add Contact', page: 'contacts/edit', contacts: {} });
+    res.render('index', { title: 'Add Contact', page: 'contacts/update', contacts: {} });
 }
 
 export function ProcessContactsAddPage(req, res, next){
@@ -38,7 +38,7 @@ export function ProcessContactsAddPage(req, res, next){
     } )
 }
 
-export function DisplayContactsEditPage(req, res, next){
+export function DisplayContactsUpdatePage(req, res, next){
     let id = req.params.id;
 
     contactsModel.findById(id, (err, contacts) => {
@@ -47,11 +47,11 @@ export function DisplayContactsEditPage(req, res, next){
             res.end(err);
         }
 
-        res.render('index', { title: 'Edit Contact', page: 'contacts/edit', contacts: contacts });
+        res.render('index', { title: 'Update Contact', page: 'contacts/update', contacts: contacts });
     });    
 }
 
-export function ProcessContactsEditPage(req, res, next){
+export function ProcessContactsUpdatePage(req, res, next){
 
     let id = req.params.id;
     

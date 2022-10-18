@@ -1,7 +1,7 @@
 <div class="container">
-    <h1>Movie List</h1>
+    <h1>Business Contact List</h1>
     <a href="/contacts-add" class="btn btn-primary" role="button">
-        <i class="fas fa-plus-circle"></i> Add a Movie</a>
+        <i class="fas fa-plus-circle"></i> Add a Business Contact</a>
     <div class="row">
         <div class="col">
     
@@ -16,7 +16,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody id="movieList">
+                <tbody id="contactsList">
                     <!-- Repeatable Rows -->
                     <% for(let count = 0; count < contacts.length; count++) { %>
                         <tr>
@@ -26,9 +26,9 @@
                             <td><%= contacts[count].email %></td>
                             
                             <td class="text-center col-1">
-                                <a href="/contacts-edit/<%= contacts[count]._id %>"
+                                <a href="/contacts-update/<%= contacts[count]._id %>"
                                     class="btn btn-primary btn-sm">
-                                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                                    <i class="fas fa-pencil-alt"></i> Update</a>
                             </td>
                             
                             <td class="text-center col-1">
