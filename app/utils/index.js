@@ -10,6 +10,7 @@ export function UserDisplayName(req){
     return '';
 }
 
+//If a user is not authenticated, they should be redirected back to the Login View 
 export function AuthGuard(req, res, next){
     if(!req.isAuthenticated()){
         return res.redirect('/login')
