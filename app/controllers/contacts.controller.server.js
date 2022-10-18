@@ -4,6 +4,7 @@
 // Date: Oct xxth, 2022
 
 import contactsModel from '../models/contacts.js';
+import { UserDisplayName } from '../utils/index.js';
 
 export function DisplayContactsList(req, res, next){
     contactsModel.find(function(err, contactsCollection) {
@@ -12,12 +13,12 @@ export function DisplayContactsList(req, res, next){
             res.end(err);
         }
 
-        res.render('index', {title: 'Business Contact List', page: 'contacts/list', contacts: contactsCollection});
+        res.render('index', {title: 'Business Contact List', page: 'contacts/list', contacts: contactsCollection, displayName: UserDisplayName(req)});
     })
 }
 
 export function DisplayContactsAddPage(req, res, next){
-    res.render('index', { title: 'Add Contact', page: 'contacts/update', contacts: {} });
+    res.render('index', { title: 'Add Contact', page: 'contacts/update', contacts: {}, displayName: UserDisplayName(req) });
 }
 
 export function ProcessContactsAddPage(req, res, next){
@@ -47,7 +48,7 @@ export function DisplayContactsUpdatePage(req, res, next){
             res.end(err);
         }
 
-        res.render('index', { title: 'Update Contact', page: 'contacts/update', contacts: contacts });
+        res.render('index', { title: 'Update Contact', page: 'contacts/update', contacts: contacts, displayName: UserDisplayName(req) });
     });    
 }
 
