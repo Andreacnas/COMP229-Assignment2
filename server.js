@@ -1,8 +1,3 @@
-// JS file
-// Name: Andrea Cavalcanti Nascimento
-// Student Number: 301250129
-// Date: Oct xxth, 2022
-
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';
