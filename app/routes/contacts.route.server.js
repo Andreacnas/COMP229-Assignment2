@@ -15,8 +15,8 @@ import { AuthGuard } from "../utils/index.js";
 
 const router = Router();
 
-router.get('/contacts-list', DisplayContactsList);
-//If a user attempts to access contacts-add, they should be redirected back to the Login View 
+//The AuthGuard function allows only authorized users to view the below pages, otherwise they will be redirected back to the Login View 
+router.get('/contacts-list', AuthGuard, DisplayContactsList);
 router.get('/contacts-add', AuthGuard, DisplayContactsAddPage);
 router.post('/contacts-add', AuthGuard, ProcessContactsAddPage);
 router.post('/contacts-update/:id', AuthGuard, ProcessContactsUpdatePage);
