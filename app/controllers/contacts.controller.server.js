@@ -14,7 +14,7 @@ export function DisplayContactsList(req, res, next){
         }
 
         res.render('index', {title: 'Business Contact List', page: 'contacts/list', contacts: contactsCollection, displayName: UserDisplayName(req)});
-    })
+    }).sort({"name":1})//Sort list by name
 }
 
 export function DisplayContactsAddPage(req, res, next){

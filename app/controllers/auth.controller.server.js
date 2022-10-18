@@ -50,7 +50,7 @@ export function ProcessLoginPage(req, res, next){
                 res.end(err);
             }
 
-            return res.redirect('/');
+            return res.redirect('/contacts-list');//If the user is authenticated, he will be taken to the Business Contacts List View
 
         })
         
