@@ -1,3 +1,8 @@
+// JS file
+// Name: Andrea Cavalcanti Nascimento
+// Student Number: 301250129
+// Date: Oct xxth, 2022
+
 import mongoose from "mongoose"
 
 const Schema = mongoose.Schema;

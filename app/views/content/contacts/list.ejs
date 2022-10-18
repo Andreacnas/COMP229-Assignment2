@@ -1,7 +1,10 @@
 <div class="container">
     <h1>Business Contact List</h1>
+    <% if(displayName) { %>
     <a href="/contacts-add" class="btn btn-primary" role="button">
-        <i class="fas fa-plus-circle"></i> Add a Business Contact</a>
+        <i class="fas fa-plus-circle"></i> Add a Movie</a>
+    <% } %>
+
     <div class="row">
         <div class="col">
     
@@ -12,8 +15,10 @@
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
+                        <% if(displayName) { %>
                         <th></th>
                         <th></th>
+                        <% } %>
                     </tr>
                 </thead>
                 <tbody id="contactsList">
@@ -24,6 +29,8 @@
                             <td><%= contacts[count].name %></td>
                             <td><%= contacts[count].phone %></td>
                             <td><%= contacts[count].email %></td>
+
+                            <% if(displayName) { %>
                             
                             <td class="text-center col-1">
                                 <a href="/contacts-update/<%= contacts[count]._id %>"
@@ -36,6 +43,8 @@
                                     class="btn btn-danger btn-sm">
                                     <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
+
+                            <% } %> 
                         </tr>
                     <% } %>
                 </tbody>
