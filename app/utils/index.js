@@ -3,6 +3,7 @@
 // Student Number: 301250129
 // Date: Oct 21th, 2022
 
+//For authentication purposes (save the username during the login)
 export function UserDisplayName(req){
     if(req.user){
         return req.user.displayName;

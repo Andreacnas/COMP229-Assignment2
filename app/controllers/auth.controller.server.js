@@ -6,6 +6,7 @@
 import express from 'express';
 
 // need passport 
+// Passport is a library for authentication purposes
 import passport from 'passport';
 
 // need to include the User Model for authentication
@@ -24,6 +25,9 @@ export function DisplayLoginPage(req, res, next){
 }
 
 // Processing Function
+//Login button checks if the user exists in db.
+//If user exsist, they will be redirected to contacts-list page
+//Otherwise, they are going to stay in the login page
 export function ProcessLoginPage(req, res, next){
     passport.authenticate('local', function(err, user, info) {
         if(err){
@@ -49,6 +53,7 @@ export function ProcessLoginPage(req, res, next){
     })(req, res, next);
 }
 
+//Logout redirects to login page and initialize the process again
 export function ProcessLogoutPage(req, res, next){
     req.logOut(function(err){
         if(err){
