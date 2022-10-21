@@ -2,7 +2,7 @@
 
 ## Name: Andrea Cavalcanti
 ## Student Number: 301250129
-## Date: Oct xxth, 2022
+## Date: Oct 21th, 2022
 
 
 Instructions :
