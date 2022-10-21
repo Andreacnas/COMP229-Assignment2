@@ -1,0 +1,36 @@
+/* About CSS file
+Name: Andrea Cavalcanti Nascimento
+Student Number: 301250129
+Date: Oct 21th, 2022 */
+
+body {
+    min-height: 100vh;  
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+/* Login button */
+.btn-login {
+    color: #ffffff;
+    background-color: #8BBCCC;
+    border-style: none;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    background-color: #1381a5;
+}
+
+/* Cancel button */
+.btn-cancel {
+    color: #ffffff;
+    border-style: none;
+}
+
+
