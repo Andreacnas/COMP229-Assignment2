@@ -1,0 +1,76 @@
+/* About CSS file
+Name: Andrea Cavalcanti Nascimento
+Student Number: 301250129
+Date: Oct 21th, 2022 */
+
+body {
+    min-height: 100vh;  
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+/* Add contacts */
+.btn-add {
+    color: #ffffff;
+    background-color: #4C6793;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 20px 32px;
+    margin-bottom: 30px;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+    background-color: #82a9e7;
+    transform: scale(1.1);
+}
+
+/* Update contacts */
+.btn-update {
+    color: #ffffff;
+    background-color: #8BBCCC;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    margin-bottom: 30px;
+    width:85px;
+}
+
+.btn-update:hover,
+.btn-update:focus {
+    background-color: #1381a5;
+}
+
+/* Delete contacts */
+.btn-delete {
+    color: #ffffff;
+    background-color: #d27723;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    margin-bottom: 30px;
+    width:85px;
+}
+
+.btn-delete:hover,
+.btn-delete:focus {
+    background-color: #c49055;
+}

@@ -1,10 +1,13 @@
 <!-- Name: Andrea Cavalcanti Nascimento | Student Number: 301250129
 Date: Oct 21th, 2022 -->
 
+<!-- CSS -->
+<link rel="stylesheet" href="./styles/list.css" />
+
 <div class="container">
-    <h1>Business Contact List</h1>
+    <h1 class="title">Business Contact List</h1>
     <% if(displayName) { %>
-        <a href="/contacts-add" class="btn btn-primary" role="button">
+        <a href="/contacts-add" class="btn btn-primary btn-add" role="button">
             <i class="fas fa-plus-circle"></i> Add a Business Contact</a>
     <% } %>    
     <div class="row">
@@ -37,13 +40,13 @@ Date: Oct 21th, 2022 -->
                             
                                 <td class="text-center col-1">
                                     <a href="/contacts-update/<%= contacts[count]._id %>"
-                                        class="btn btn-primary btn-sm">
+                                        class="btn btn-primary btn-sm btn-update">
                                         <i class="fas fa-pencil-alt"></i> Update</a>
                                 </td>
                                 
                                 <td class="text-center col-1">
                                     <a href="/contacts-delete/<%= contacts[count]._id %>"
-                                        class="btn btn-danger btn-sm">
+                                        class="btn btn-danger btn-sm btn-delete">
                                         <i class="fas fa-trash-alt"></i> Delete</a>
                                 </td>
                             
